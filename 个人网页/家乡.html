@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" href="家乡.css">
+    <link rel="stylesheet" href="./学习.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <nav id="nav">
+            <div id="logo"> <img src="./images2/logo3_03.png" alt=""></div>
+
+            <div id="nav_right">
+                <ul>
+                    <li> <a href="收藏.html"> <b>收藏</b> </a> </li>
+                    <li> <a href="学习.html"> <b>大学</b> </a> </li>
+                    <li> <a href="家乡.html"> <b>家乡</b> </a> </li>
+                    <li> <a href="爱好.html"> <b>爱好</b> </a> </li>
+                    <li> <a href="index.html"> <b>首页</b> </a> </li>
+                </ul>
+            </div>
+        </nav>
+        <main id="main">
+            <aside id="aside">
+                <div id="myli">
+                    <ul>
+                        <li><a href="生活.html">生活</a> </li>
+                        <li><a href="学习.html">学习</a> </li>
+                        <li><a href="运动.html">运动</a> </li>
+                        <li><a href="登录.html">登录</a> </li>
+                        <li><a href="注册.html">注册</a> </li>
+                        <li><a href="">More</a> </li>
+
+                    </ul>
+                </div>
+                <div id="btn">||</div>
+            </aside>
+
+            <div style="height: 80px; text-align: center; color: red;"><h1 id="showTitile"></h1></div>
+			
+			<p id="showText">
+				
+			</p>
+            <script src="./家乡.js"></script>
+
+    </div>
+
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $('#btn').click(function(){
+               var left = parseInt($('#aside').css('marginLeft')) 
+                console.log(left)
+                if(left==0){
+                    $('#aside').css('marginLeft','-190px')
+                     $('#aside').css('background','rgb(115, 233, 227)')
+                    $('#myli').css('opacity','0')
+                } else{
+                    $('#aside').css('marginLeft','0px')
+                    $('#aside').css('background','rgb(102, 158, 231)')
+                  $('#myli').css('opacity','1')
+                }
+            })
+
+            $('#aside').css('marginLeft','-190px')
+            $('#aside').css('background','rgb(115, 233, 227)')
+            $('#myli').css('opacity','0')
+        })
+    </script>
+</body>
+
+</html>

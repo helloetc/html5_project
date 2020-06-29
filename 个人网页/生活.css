@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+a{text-decoration: none;color: #fff;}
+#header{
+    height: 60px;
+    width: 100%;
+    background: rgb(54, 54, 179);
+  
+}
+#header div{
+    float: right;
+    color: #fff;
+    line-height: 60px;
+    margin-right: 8%;
+}
+#nav{
+    height: 90px;
+    background-color: rgb(253, 180, 65);
+    overflow: hidden;
+}
+#logo{
+    width: 113px;
+    height: 60px;
+    overflow: hidden;
+    /* border: solid; */
+    margin-left:  10%;
+    margin-top: 13px;
+    float: left;
+}
+#logo img {
+    width: 100%;
+}
+#nav_right li{
+    list-style: none;
+    float: right;
+    margin: 0 40px;
+    line-height: 90px;
+  
+}
+body{
+    background: rgb(115, 233, 227);
+    position: relative;
+    min-width: 1497px;
+}
+#aside{
+    height: 450px;
+    width: 200px;
+    position: fixed;
+    /* border: solid; */
+    z-index: 10;
+    z-index: 999;
+    background: rgb(115, 200, 227);
+    transition: all 1.5s ease;
+}
+#btn{
+    height: 450px;
+    width: 10px;
+    background-color: blue;
+    position:absolute ;
+    right: 0;
+    line-height:450px;
+    top: 0;
+}
+#btn:hover{cursor: pointer;}
+#myli{margin-top: 100px;}
+#myli li {
+    list-style: none;
+    /* color: #fff; */
+    margin: 30px auto;
+    width: 180px;
+    text-align: center;
+}
+#myli li a{
+    color: #fff;
+}
+div{
+    overflow: hidden;
+}
+#word1,#img1,#word2{
+    /* display: inline-block; */
+    float: left;
+    /* border: solid; */
+    height: 380px;
+}
+.allWord{
+    font-size: 900;
+    font-style: italic;
+    padding-left: 20px;
+}
+#word1{
+    width: 50%;
+    font-size: 900;
+     font-style: italic;
+     /* text-align: ; */
+     /* line-height: 300px; */
+     padding-top: 200px;
+     
+}
+.content{
+    width: 90%;
+    margin: 20px auto;
+
+}
+.content div{
+    float: left;
+}
+#img2{
+    width: 560px;
+    overflow: hidden;
+    /* margin-top: -160px; */
+}
+#img2 img{width: 100%;}
+#word2{
+    width: 50%;
+    padding-top:200px ;
+}
+.marginUp{
+    margin-top: -160px;
+}
+.word{
+    width: 50%;
+    padding-top: 156px;
+    padding-left: 20px;
+    padding-right:20 px;
+}
+.marginUp1{
+    margin-top: -10px;
+
+}

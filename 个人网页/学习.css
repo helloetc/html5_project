@@ -1,0 +1,116 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+#nav{
+    height: 90px;
+    background-color: rgb(253, 180, 65);
+    overflow: hidden;
+}
+#logo{
+    width: 113px;
+    height: 60px;
+    overflow: hidden;
+    /* border: solid; */
+    margin-left:  10%;
+    margin-top: 13px;
+    float: left;
+}
+#logo img {
+    width: 100%;
+}
+#nav_right li{
+    list-style: none;
+    float: right;
+    margin: 0 40px;
+    line-height: 90px;
+  
+}
+#nav_right li a{
+    color: #fff;
+}
+#nav_right ul{
+    padding-right: 80px;
+}
+#aside{
+    height: 450px;
+    width: 200px;
+    position: fixed;
+    /* border: solid; */
+    z-index: 10;
+    z-index: 999;
+    background: rgb(102, 158, 231);
+    transition: all 1.5s ease;
+}
+#btn{
+    height: 450px;
+    width: 10px;
+    background-color: blue;
+    position:absolute ;
+    right: 0;
+    line-height:450px;
+    top: 0;
+}
+#btn:hover{cursor: pointer;}
+#myli{margin-top: 100px;}
+#myli li {
+    list-style: none;
+    /* color: #fff; */
+    margin: 30px auto;
+    width: 180px;
+    text-align: center;
+}
+#myli li a{
+    color: #fff;
+}
+body{
+    background: rgb(115, 233, 227);
+}
+
+
+
+
+#wrap{
+    width: 80%;
+    margin: 0 auto;
+    /* border: solid; */
+}
+#itemComtent{
+    width: 75%;
+    /* border: solid; */
+}
+#itemComtent , #list{
+    float: left;
+}
+#list{
+    width: 24%;
+    border: solid 1px;
+    border-top: none;
+}
+.item{
+    display: flex;
+   margin: 20px 0px;
+   border-bottom: solid 2px #ccc;
+  
+   
+}
+.img{
+    flex: 2;
+    overflow: hidden;
+}
+.img img{
+    width: 100%;
+}
+#list li{
+    margin: 20px 0;
+    margin-left: 30px;
+}
+#list li:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+.about{
+    margin:0 20px;
+    flex: 6;
+    /* border: solid; */
+}
+
+

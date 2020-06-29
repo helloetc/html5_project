@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="myImg">
+            <img src="./images/306.png" alt="">
+        </div>
+        <header id="header"><div>1615119942@qq.com </div> </header>
+        <nav id="nav">
+            <div id="logo"> <img src="./images2/logo3_03.png" alt=""></div>
+
+            <div id="nav_right">
+                <ul>
+                    <li> <a href="收藏.html">  <b>收藏</b> </a> </li>
+                    <li> <a href="学习.html">  <b>大学</b> </a> </li>
+                    <li> <a href="家乡.html">  <b>家乡</b> </a> </li>
+                    <li> <a href="爱好.html">  <b>爱好</b> </a> </li>
+                    <li> <a href="index.html">  <b>首页</b> </a> </li>
+                </ul>
+            </div>
+        </nav>
+        <main id="main">
+            <aside id="aside">
+                <div id="myli">
+                    <ul>
+                        <li><a href="生活.html">生活</a> </li>
+                        <li><a href="学习.html">学习</a> </li>
+                        <li><a href="运动.html">运动</a> </li>
+                        <li><a href="登录.html">登录</a> </li>
+                        <li><a href="注册.html">注册</a> </li>
+                        <li><a href="">More</a> </li>
+                        
+                    </ul>
+                </div>
+                <div id="btn">||</div>
+            </aside>
+            <div id="content">
+               <img src="./images2/banner1.jpg" alt="">
+
+               <div id="myName">
+                   <h2>哒哒~个人网站</h2>
+                   <p>烟雨深处,一枕蓝梦独自消瘦 烟雨深处,<br>
+                       一枕蓝梦独自消瘦。</p>
+               </div>
+            </div>
+        </main>
+        <footer id="footer">
+            2019-2020-1学期 web前端开发技术课程设计 软件Q179 韦敏贵 201709601376
+        </footer>
+    </div>
+
+    <div style="display: none;" >
+        <audio autoplay loop >
+            <source src="../music.mp3">
+        </audio>
+    </div>
+
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $('#btn').click(function(){
+               var left = parseInt($('#aside').css('marginLeft')) 
+                console.log(left)
+                if(left==0){
+                    $('#aside').css('marginLeft','-190px')
+                }else{
+                    $('#aside').css('marginLeft','0px')
+                }
+            })
+
+            $('#aside').css('marginLeft','-190px')
+        })
+    </script>
+</body>
+
+</html>

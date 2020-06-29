@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动</title>
+    <link rel="stylesheet" href="./运动.css">
+</head>
+
+<body>
+    <header id="header"><div>1615119942@qq.com </div> </header>
+    <nav id="nav">
+        <div id="logo"> <img src="./images2/logo3_03.png" alt=""></div>
+
+        <div id="nav_right">
+            <ul>
+                <li> <a href="收藏.html">  <b>收藏</b> </a> </li>
+                <li> <a href="学习.html">  <b>大学</b> </a> </li>
+                <li> <a href="家乡.html">  <b>家乡</b> </a> </li>
+                <li> <a href="爱好.html">  <b>爱好</b> </a> </li>
+                <li> <a href="index.html">  <b>首页</b> </a> </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main">
+        <aside id="aside">
+            <div id="myli">
+                <ul>
+                    <li><a href="生活.html">生活</a> </li>
+                    <li><a href="学习.html">学习</a> </li>
+                    <li><a href="运动.html">运动</a> </li>
+                    <li><a href="登录.html">登录</a> </li>
+                    <li><a href="注册.html">注册</a> </li>
+                    <li><a href="">More</a> </li>
+                    
+                </ul>
+            </div>
+            <div id="btn">||</div>
+        </aside>
+    <div class="content">
+        <div id="img1">
+            <img src="./images2/运动1.jpg" alt="">
+        </div>
+        <div id="word1" class="allWord">
+
+            1、生活就像一杯白开水，滴一滴墨汁，黑色会迅速扩散，
+            遮盖整个世界，黑暗笼罩，
+            滴一滴红色，热情、奔放会被渲染，自己的心情也灿烂。
+        </div>
+        <div class="marginUp">
+            <div id="word2" class="allWord">
+                2、生活就像爬大山。在山下的时候，你仰望高山，
+                你看见的是整座大山，看到的是山的伟岸，山的秀丽，
+                山的令人遐思与浮想联翩的动人风韵。
+                当你动用蓄集了整个青春的力量准备爬山的时候，你满怀信心，
+                雄心万丈，一付山不怕高、有志则行的踌躇满志的模样，
+                幻想着登上山巅时的一览众山小的美景和风光。
+            </div>
+            <div id="img2">
+                <img src="./images2/运动2.jpg" alt="" >
+            </div>
+
+        </div>
+
+        <div class="marginUp">
+            
+            <div id="img3">
+                <img src="./images2/运动3.jpg" alt="">
+            </div>
+            <div class="word allWord">
+                3、生活就像一面镜子，
+                人们从生活中看到的东西，就是自己心态的映照。
+                假如你的心态是暗淡的，那生活在你的眼里就会使暗淡无光的；
+                假如你的心态是晴朗的，那么生活在你的眼里就会充满阳光。
+                如果一个人永远带着无奈、怀疑、恐惧、忧虑去生活，那无疑是在煎熬生命。反之，一个人倘若能生活在充满生之喜悦的安详之中，就会发现生活原来是这样的美好，
+                他的心情就会一片宁静。而这正是我们大家都应该拥有的人生态度！
+            </div>
+
+        </div>
+
+        <div class="marginUp1">
+            <div class="word allWord">
+                4、生活，就像一场场演出而每一场演出，我都只能在曲将终了，
+                人将散去之际上场而此曲过后，谢幕，场空，惟留下你渐渐消散的余香。
+            </div>
+            
+            <div id="img4">
+                <img src="./images2/运动4.jpg" alt="">
+            </div>
+           
+
+        </div>
+
+
+    </div>
+
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $('#btn').click(function(){
+               var left = parseInt($('#aside').css('marginLeft')) 
+                console.log(left)
+                if(left==0){
+                    $('#aside').css('marginLeft','-190px')
+                }else{
+                    $('#aside').css('marginLeft','0px')
+                }
+            })
+
+            $('#aside').css('marginLeft','-190px')
+        })
+    </script>
+</body>
+
+</html>

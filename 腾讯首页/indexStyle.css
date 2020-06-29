@@ -1,0 +1,345 @@
+body{
+    background-color: rgb(112, 99, 99);
+}
+a,button{
+    text-decoration: none;
+    cursor: pointer;
+}
+img:not(.notBig):hover{
+    /* scale: 1.2; */
+    transform: scale(1.2);
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+img:not(.notBig){
+    transition: all 0.5s linear;
+}
+#wrap{
+    width: 93%;
+    border: solid 2px;
+    margin:  0 auto;
+    background-color: beige;
+}
+.header_img{
+    display: inline-block;
+}
+.header_p{
+   float: right;
+   margin-right: 3%;
+   margin-top:10px ;
+   background-color: #ccc;
+   height: 30px;
+   line-height: 30px;
+   padding: 2px 8px;
+}
+#firstNav{
+    padding-left: 2%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(71, 46, 46);
+    display: flex;
+}
+#firstNav li {
+   display: inline-block;
+   margin-top: 4px;
+   padding: 0 8px;
+   margin-left:  8px;
+   border-radius:  6px 6px 0 0;
+}
+#firstNav > span{ margin:0 3%;}
+/* #nav_right,#nav_left{ display: inline-block;}*/
+#nav_left{flex:4}
+#nav_right{flex: 6;
+     text-align: right;
+     padding-right: 80px;
+    } 
+
+
+#firstNav a{ color: blanchedalmond;}
+#firstNav li:hover{background-color: blanchedalmond;}
+#firstNav li:hover a{color: rgb(71, 46, 46); }
+main{
+    /* border: solid; */
+    padding-right: 60px;
+}
+#main_first_art{
+    height: 360px;
+    margin-top: 10px;
+    
+}
+
+#show_img{ 
+    margin-left: 3%;
+    float: left;
+    width: 50%;
+    height: 342px;
+    overflow: hidden;
+}
+#show_img > img{
+    height: 100% ;
+    
+}
+#main_first_asi{
+    background-color: #ccc;
+    width: 30%;
+    float: right;
+    padding-left: 20px;
+    height: 342px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+#main_first_asi p{
+  margin:  10px 0 ;
+  
+}
+#main_first_asi h4{
+    width: 100%;
+    margin: 0 90px;
+}
+#main_first_asi > img {
+    margin-left: 20%;
+}
+#main_first_asi > div >img:first-child{
+    margin-left: 20%;
+    margin-top: 8px;
+}
+#cloud_speed{
+    margin-left: 3%;
+    height: 65px;
+    border: solid rgb(224, 213, 213);
+    overflow: hidden;
+}
+#cloud_speed >  p > span:first-child{
+    color: orange;
+}
+#cloud_speed span{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+#cloud_speed > p {
+    float: left;
+}
+#cloud_speed >button  {
+   width: 140px;
+   background-color: orange;
+   height: 32px;
+   line-height: 32px;
+   color: #fff;
+   margin-top: 20px  ;
+   margin-left: 30px;
+   text-align: center;
+   border-radius: 3px;
+   border: none;
+}
+#movies_classes{
+    height: 170px;
+    border: solid #ccc;
+    margin-top: 10px ;
+    margin-left: 3%;
+    overflow: hidden;
+    position: relative;
+}
+#movies_wrap{
+    height: 170px;
+    width: 200%;
+}
+
+
+#movies_classes:hover #left_btn{
+    background-position:0 0;
+}
+#movies_classes:hover #right_btn{
+    background-position:-25px 0px;
+}
+#left_btn{
+    height: 50px;
+    width: 30px;
+   position: absolute;
+   background-repeat: no-repeat;
+   background-image: url(../images/课设2_03_07.png);
+   top: 50px;
+   background-position:0 -55px;
+}
+#right_btn{
+    height: 50px;
+    width: 30px;
+    /* border-radius: 100%   ; */
+   background-repeat: no-repeat;
+   position: absolute;
+   background-image: url(../images/课设2_03_07.png);
+   right: 0px;
+   top:50px ;
+   background-position:-25px -55px;
+
+}
+#left_btn,#right_btn:hover{
+    cursor: pointer;
+}
+.movies_class{
+    float: left;
+    width:253px;
+    border-left: solid #ccc 1px;
+    padding: 10px 0;
+   
+}
+
+.movies_class  span  {
+    font-size: 0.7em;
+    color: slateblue;
+}
+.movies_class_img_limit{
+    height: 96px;
+    width: 164px;
+    overflow: hidden;
+}
+.hongKong_movie_img_limit{
+    height: 158px;
+    width: 160px;
+    overflow: hidden;
+}
+.hongKong_movie_2_img_limit{
+    height: 90px;
+    width: 90px;
+    overflow: hidden;
+}
+.content_img_limit{
+    width: 193px;
+    height: 187px;
+    overflow: hidden;
+}
+#hongKong_movies{
+    margin-left: 3%;
+    margin-top: 10px;
+    border: solid rgb(224, 213, 213);
+    padding: 6px 7px;
+    /* height: 48px; */
+}
+#hongKong_movies > p >img{
+    float: left;
+    border-radius: 49% 50%;
+
+}
+#hongKong_movies > p {
+    font-size: 1.3em;
+    line-height: 48px;
+}
+#hongKong_movies span{
+    color: orange;
+    margin-left:  20px;
+}
+#hongKong_movies_1{
+    margin-top: 10px;
+    height: 297px;
+    overflow: hidden;
+}
+#hongKong_movies_1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.hongKong_movie{
+    /* margin: 0 -10px; */
+    float: left;
+}
+.hongKong_movie > span:first-child{
+    color: orange;
+    font-size: 4em;
+    float: left;
+    height: 155px;
+    line-height: 155px;
+}
+.hongKong_movie p ,#leve{
+    /* border: solid; */
+    margin: 4px 55px;
+}
+.price{
+    font-size: 2em;
+    color: red;
+}
+.version{
+    color: #ccc;
+}
+.hongKong_movie p:nth-child(5){
+    margin-left: 33px;
+}
+#hongKong_movies_1_2{
+    margin-left: 20px;
+}
+.hongKong_movie_2{
+    /* width: 140px; */
+    float: left;
+}
+.hongKong_movie_2 span{
+    float: left;
+    font-size: 3em;
+    line-height: 90px;
+}
+
+.hongKong_movie_2 img{
+    height: 90px;
+}
+.hongKong_movie_2 p{
+  margin-left: 45px;
+  font-size: 1.3em;
+}
+#hongKong_movies_1_2{
+    float: left;
+}
+.hongKong_movie_2 img:nth-child(4){
+    margin-left: 45px;
+    width: 95px;
+    height: 20px;
+}
+#sale{
+    margin-top: 10px;
+    margin-left: 3%;
+}
+#sale_header{
+    border-bottom:solid blue ;
+}
+#sale_header p{
+    display: inline-block;
+    background-color: blue;
+    color: #fff;
+}
+.hot_sale{
+   float: left;
+   width: 24.8%;
+  
+   border: solid #ccc 1px; 
+}
+#sale::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.content{
+    width: 208px;
+    margin-left: 17%;
+    margin-top: 8px;
+    height: 300px;
+}
+.content span{
+    color: red;
+}
+.content p{
+    margin-top: 5px;
+}
+.content > button{
+    background-color: red ;
+    color: #fff;
+    padding:2px 10px ;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+}
+#footer{
+    margin-left: 3%;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color:#fff;
+    background-color: rgb(37, 31, 31);
+}

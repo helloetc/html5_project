@@ -1,0 +1,127 @@
+
+#content{
+    border: solid;
+    /* display: inline-block; */
+    width: 700px;
+    margin: 30px auto;
+    
+}
+#footContent{
+    height: 32px;
+    /* border: solid red; */
+    margin-top: -4px;
+    position: relative;
+    /* display: inline-block; */
+}
+#palyCondition{
+    display: inline-block;
+    background: rgb(231, 191, 191);
+    width: 20px;
+    height: 20px;
+    margin: 4px 20px 10px 10px;
+    overflow: hidden;
+    /* border: solid; */
+    position: absolute;
+}
+#stopCondition{
+    height: 20px;
+}
+#startCondition{
+    height: 20px;
+    
+
+}
+#progress_content{
+    display: inline-block;
+    height: 10px;
+    width: 52%;
+    /* border: solid 1px; */
+    margin: 10px  0px 10px 45px;
+    border-radius: 4px;
+    background-color: #ccc;
+    position: relative;
+}
+#progress{
+    /* width: 10px; */
+    height: 10px;
+    /* width: 20px; */
+    border-radius: 4px;
+    background: rgb(230, 83, 83);
+    position: absolute;
+}
+#progress_btn{
+    position: absolute;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    /* background-color:rgb(134, 6, 6); */
+    background: url(./images/handle.png);
+    background-size: 100%;
+    margin-top: -3px;
+    margin-left: -2px;
+}
+#footLeftContent{
+    float:right;
+    height: 32px;
+    width:39%;
+    /* border: solid red; */
+}
+#timeContent{
+    margin: 3px 0;
+   float: left;
+    
+   
+}
+
+#void_ic{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 3px 5px 0px 6px;
+    overflow: hidden;
+    /* border: solid; */
+}
+
+#voidContent{
+    /* display: inline-block; */
+    float: left;
+    height: 10px;
+    width: 30%;
+    /* border: solid 1px; */
+    margin: 8px  0px 10px 0px;
+    border-radius: 4px;
+    background-color: #ccc;
+    position: relative;
+}
+
+#voidProgress{
+    height: 10px;
+    /* width: 20px; */
+    border-radius: 4px;
+    background: rgb(230, 83, 83);
+    position: absolute;
+    /* bottom: ; */
+
+}
+#void_radius{
+    position: absolute;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    /* background-color:rgb(134, 6, 6); */
+    background: url(./images/handle.png);
+    background-size: 100%;
+    margin-top: -2px;
+
+}
+
+#fullSree{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 3px 5px 0px 20px;
+    overflow: hidden;
+    /* border: solid; */
+}

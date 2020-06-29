@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收藏</title>
+    <link rel="stylesheet" href="./收藏.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="./myfun.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+        <div id="myImg">
+            <img src="" alt="">
+        </div>
+    <nav id="nav">
+        <div id="logo"> <img src="./images2/logo3_03.png" alt=""></div>
+
+        <div id="nav_right">
+            <ul>
+                <li> <a href="收藏.html">  <b>收藏</b> </a> </li>
+                <li> <a href="学习.html">  <b>大学</b> </a> </li>
+                <li> <a href="家乡.html">  <b>家乡</b> </a> </li>
+                <li> <a href="爱好.html">  <b>爱好</b> </a> </li>
+                <li> <a href="index.html">  <b>首页</b> </a> </li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main">
+        <aside id="aside">
+            <div id="myli">
+                <ul>
+                    <li><a href="生活.html">生活</a> </li>
+                    <li><a href="学习.html">学习</a> </li>
+                    <li><a href="运动.html">运动</a> </li>
+                    <li><a href="登录.html">登录</a> </li>
+                    <li><a href="注册.html">注册</a> </li>
+                    <li><a href="">More</a> </li>
+                    
+                </ul>
+            </div>
+            <div id="btn">||</div>
+        </aside>
+    <div id="content">
+        <video width="700" id="myVideo">
+            <source src="./视频.mp4" type="">
+        </video>
+
+        <!-- 底部组件的容器 -->
+        <div id="footContent">
+            <!-- 这是暂停和开始 -->
+            <div id="palyCondition"> 
+                <!-- 暂停 -->
+                <div id="stopCondition">  
+                    <img src="./images/sprite.png" alt="" id="stopCondition_img" style="height: 20px;">
+                </div>
+                <!-- 开始 -->
+                <div id="startCondition"  style="display: none;">   
+                    <img src="./images/sprite.png" alt="" id="startCondition_img" style="height: 20px;margin-left: -24px;">
+                </div>
+            </div>
+
+            <!-- 进度 -->
+            <div id="progress_content">
+                <!-- 实际进度 -->
+                <div id="progress">
+                    <!-- 进度条原点 id-->
+                    <i id="progress_btn"></i>
+                </div>
+            </div>
+
+            <!-- 底部左边的部分 -->
+            <div id="footLeftContent">
+                
+                <!-- 显示时间的容器 -->
+                <div id="timeContent">
+                      <span id="nowTime">00:00</span>
+                      /
+                      <span id="allTime"></span>
+                </div>
+                <div id="void_ic">
+                    <img src="./images/sprite.png" alt="" style="height: 20px; margin-left: -66px;">
+                </div>
+                <!-- 声音的调节条 -->
+                <div id="voidContent">
+
+                    <!-- 实际声音 -->
+                    <div id="voidProgress">
+                        <!-- 声音的圆圆 保留改了id-->
+                        <i id="void_radius"></i>
+                    </div>
+                </div>
+                <!-- 全频按钮 -->
+                <div id="fullSree">
+                    <img src="./images/sprite.png"  alt="" id="fullSree_img" style="height: 20px; margin-left: -87px;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+         $(function(){
+            $('#btn').click(function(){
+               var left = parseInt($('#aside').css('marginLeft')) 
+                console.log(left)
+                if(left==0){
+                    $('#aside').css('marginLeft','-190px')
+                     $('#aside').css('background','rgb(115, 233, 227)')
+                    $('#myli').css('opacity','0')
+                } else{
+                    $('#aside').css('marginLeft','0px')
+                    $('#aside').css('background','rgb(102, 158, 231)')
+                  $('#myli').css('opacity','1')
+                }
+            })
+
+            $('#aside').css('marginLeft','-190px')
+            $('#aside').css('background','rgb(115, 233, 227)')
+            $('#myli').css('opacity','0')
+        })
+    </script>
+</div>
+</body>
+</html>

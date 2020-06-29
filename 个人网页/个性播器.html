@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./jquery-3.5.1.js"></script>
+    <script src="./myfun.js"></script>
+
+    <title>播放器</title>
+</head>
+
+<body>
+    <!-- 播放容器 -->
+
+    <div id="content">
+        <video width="700" id="myVideo">
+            <source src="./视频.mp4" type="">
+        </video>
+
+        <!-- 底部组件的容器 -->
+        <div id="footContent">
+            <!-- 这是暂停和开始 -->
+            <div id="palyCondition"> 
+                <!-- 暂停 -->
+                <div id="stopCondition">  
+                    <img src="./images/sprite.png" alt="" id="stopCondition_img" style="height: 20px;">
+                </div>
+                <!-- 开始 -->
+                <div id="startCondition"  style="display: none;">   
+                    <img src="./images/sprite.png" alt="" id="startCondition_img" style="height: 20px;margin-left: -24px;">
+                </div>
+            </div>
+
+            <!-- 进度 -->
+            <div id="progress_content">
+                <!-- 实际进度 -->
+                <div id="progress">
+                    <!-- 进度条原点 id-->
+                    <i id="progress_btn"></i>
+                </div>
+            </div>
+
+            <!-- 底部左边的部分 -->
+            <div id="footLeftContent">
+                
+                <!-- 显示时间的容器 -->
+                <div id="timeContent">
+                      <span id="nowTime">00:00</span>
+                      /
+                      <span id="allTime"></span>
+                </div>
+                <div id="void_ic">
+                    <img src="./images/sprite.png" alt="" style="height: 20px; margin-left: -66px;">
+                </div>
+                <!-- 声音的调节条 -->
+                <div id="voidContent">
+
+                    <!-- 实际声音 -->
+                    <div id="voidProgress">
+                        <!-- 声音的圆圆 保留改了id-->
+                        <i id="void_radius"></i>
+                    </div>
+                </div>
+                <!-- 全频按钮 -->
+                <div id="fullSree">
+                    <img src="./images/sprite.png"  alt="" id="fullSree_img" style="height: 20px; margin-left: -87px;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+    </script>
+</body>
+
+</html>
